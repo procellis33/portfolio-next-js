@@ -5,15 +5,30 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+
+    // Error Reporting
+    "allowUnreachableCode": false, // Report unreachable code
+    "exactOptionalPropertyTypes": true, // Enable strict checking of optional property types
+    "noFallthroughCasesInSwitch": true, // Report fallthrough cases in switch statements
+    "noImplicitThis": true, // Enable strict checking of 'this' expressions
+    "noUnusedLocals": true, // Report unused local variables
+    "noUnusedParameters": true, // Report unused parameters
+    "noImplicitAny": true, // Enable strict checking for 'any' types
+    "noImplicitReturns": true, // Enable strict checking for return statements
+    "alwaysStrict": true, // Parse in strict mode and emit 'use strict'
+    "strictBindCallApply": true, // Enable strict bind, call, and apply methods
+    "strictFunctionTypes": true, // Enable strict checking for function types
+    "strictNullChecks": true, // Enable strict null checks
+    "strictPropertyInitialization": true, // Enable strict checking for property initialization
+
     "plugins": [
       {
         "name": "next"
