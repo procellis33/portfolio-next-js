@@ -10,12 +10,11 @@ import useActiveSectionContext from '@/hooks/useActiveSectionContext';
 const Header: React.FC = () => {
   const {activeSection, setActiveSection, setTimeOfLastClick} =
     useActiveSectionContext();
-  console.log(activeSection);
 
   return (
     <header className='relative z-[999]'>
       <motion.div
-        className='fixed left-1/2 top-0 h-[6rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] dark:border-black/40 dark:bg-gray-950 dark:bg-opacity-75 sm:top-5 sm:h-[3.25rem] sm:w-[31rem] sm:rounded-full'
+          className='fixed left-1/2 top-0 h-[6rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] dark:border-black/40 dark:bg-gray-950 dark:bg-opacity-75 sm:top-5 sm:h-[3.25rem] sm:w-[31rem] sm:rounded-full'
         initial={{y: -100, x: '-50%', opacity: 0}}
         animate={{y: 0, x: '-50%', opacity: 1}}></motion.div>
       <nav className='fixed left-1/2 top-[0.15rem] flex h-[4rem] -translate-x-1/2 py-2 sm:top-[1.5rem] sm:h-[initial] sm:py-0'>
