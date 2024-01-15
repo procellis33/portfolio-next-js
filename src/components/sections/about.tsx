@@ -25,7 +25,7 @@ const About: React.FC = () => {
         people. <span className='italic'>My favorite part of programming</span>{' '}
         is the problem-solving aspect. I <span className='underline'>love</span>{' '}
         the feeling of finally figuring out a solution to a problem. My core
-        stack is <span className='font-medium'>TypeScript, React, Redux</span>.
+        stack is <span className='font-medium'>TypeScript, React</span>.
         I am currently looking for a{' '}
         <span className='font-medium'>full-time position</span> as a front-end
         developer.
