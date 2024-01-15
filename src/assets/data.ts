@@ -33,28 +33,25 @@ export const links: readonly ILink[] = [
 export const experiencesData = [
   {
     title: 'Front-End Engineer',
-    skills: ['TypeScript', 'React', 'Redux', 'REST', 'UX', 'Webpack'],
+    skills: ['TypeScript', 'React'],
     description:
-      'I focused on TypeScript and React, building visual software elements, enhancing user experience, and refactoring legacy code. The project spanned logistics, finance, and included customer management, notifications, and statistics systems.',
+      'Initially, I accumulated experience within the team by completing simple tasks such as adding new components and fixing bugs. Subsequently, I progressed to handling more challenging assignments, including the creation of crucial components with key logic, refactoring legacy code, optimizing the application, engaging in code reviews, and occasionally participating in technical interviews.',
     icon: React.createElement(CgWorkAlt),
     date: 'Apr 2021 - Oct 2022',
   },
   {
-    title: 'Studying break',
+    title: 'Professional development',
     skills: [],
     description:
-      'During my break at CTU FIT, I learned C, Assembler, and computer operations. Expanding further, I tackled DevOps and Big Data, mastering development operations and efficient data handling.',
+      'During my break at CTU FIT, I learned fundamentals such as C, C++, Assembler, computer logic, advanced data structures, efficient data handling and the architecture of computers. Later, I delved into DevOps and different databases.',
     icon: React.createElement(LuGraduationCap),
-    date: 'Nov 2022 - Apr 2023',
+    date: 'Oct 2022 - May 2023',
   },
   {
     title: 'Software Engineer',
     skills: [
       'TypeScript',
       'React Native',
-      'Redux',
-      'REST',
-      'UX',
       'Go',
       'Redis',
       'PostgreSQL',
