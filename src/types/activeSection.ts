@@ -1,3 +1,3 @@
-import {ILink} from '@/assets/data';
+import { ILink } from "@/assets/data";
 
-export type IActiveSection = ILink['name'];
+export type IActiveSection = ILink["name"];

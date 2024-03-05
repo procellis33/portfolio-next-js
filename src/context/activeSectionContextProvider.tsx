@@ -1,6 +1,6 @@
-'use client';
-import React, {createContext, useState} from 'react';
-import {IActiveSection} from '@/types/activeSection';
+"use client";
+import React, { createContext, useState } from "react";
+import { IActiveSection } from "@/types/activeSection";
 
 interface IActiveSectionContextProvider {
   children: React.ReactNode;
@@ -14,13 +14,13 @@ interface IActiveSectionContext {
 }
 
 export const ActiveSectionContext = createContext<null | IActiveSectionContext>(
-  null
+  null,
 );
 
 const ActiveSectionContextProvider: React.FC<IActiveSectionContextProvider> = ({
   children,
 }) => {
-  const [activeSection, setActiveSection] = useState<IActiveSection>('Home');
+  const [activeSection, setActiveSection] = useState<IActiveSection>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
 
   return (
@@ -30,7 +30,8 @@ const ActiveSectionContextProvider: React.FC<IActiveSectionContextProvider> = ({
         setActiveSection,
         timeOfLastClick,
         setTimeOfLastClick,
-      }}>
+      }}
+    >
       {children}
     </ActiveSectionContext.Provider>
   );
