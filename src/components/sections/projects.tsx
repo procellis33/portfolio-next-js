@@ -39,17 +39,17 @@ const Projects: React.FC = () => {
         }}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 3000,
             stopOnMouseEnter: true,
           }),
         ]}
-        orientation={width < XS_SCREEN ? "vertical" : "horizontal"}
-        className={cn(
-          "sm:w-[28rem] md:w-[40rem] xl:w-[60rem]",
-          width < XS_SCREEN && "mt-20",
-        )}
+        className={cn("sm:w-[28rem] md:w-[40rem] xl:w-[60rem]")}
       >
-        <CarouselContent>
+        <CarouselContent
+          style={{
+            width: width < XS_SCREEN ? width / 1.5 : undefined,
+          }}
+        >
           {projectsData.map((project, index) => {
             if (
               (!project.imageDark && !project.imageLight) ||
@@ -71,8 +71,12 @@ const Projects: React.FC = () => {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious
+          className={cn(width < XS_SCREEN && "-bottom-14 top-[unset] left-0")}
+        />
+        <CarouselNext
+          className={cn(width < XS_SCREEN && "-bottom-14 top-[unset] left-12")}
+        />
       </Carousel>
     </section>
   );

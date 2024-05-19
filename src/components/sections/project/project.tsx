@@ -28,16 +28,13 @@ export const Project: React.FC<IProject> = ({
           className={
             "group rounded-md border border-black/[0.1] bg-white dark:bg-white/10 dark:text-white/80 sm:w-[28rem] md:w-[40rem] xl:w-[60rem]"
           }
-          style={{
-            width: width < XS_SCREEN ? width / 1.5 : undefined,
-          }}
         >
           <AspectRatio ratio={width < XS_SCREEN ? 9 / 16 : 16 / 9}>
             <Image
               src={width < XS_SCREEN ? mobileImages : image}
               alt={title}
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 448px, (max-width: 1280px) 640px, 960px"
-              quality={80}
+              quality={90}
               fill
               loading={"lazy"}
               className={"rounded-md object-cover"}
