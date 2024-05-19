@@ -62,13 +62,13 @@ const Home: React.FC = () => {
       >
         <span className="font-bold">Hello, I&apos;m Alexey.</span> I&apos;m
         mainly a <span className="font-bold">front-end engineer</span> with{" "}
-        <span className="font-bold">more than 2 years</span> of experience. I
+        <span className="font-bold">more than 2.5 years</span> of experience. I
         enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React</span>.
       </motion.h1>
 
       <motion.div
-        className="flex flex-col items-center justify-center gap-3 px-4 text-lg font-medium sm:flex-row"
+        className="flex flex-col items-center justify-center gap-x-5 gap-y-3 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
