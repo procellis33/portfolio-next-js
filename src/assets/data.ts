@@ -51,12 +51,20 @@ interface IProjectsData {
 
 export const projectsData: IProjectsData[] = [
   {
-    imageDark: "/images/projects/1_dark.png",
-    imageMobileDark: "/images/projects/1_mobile_dark.png",
-    imageLight: "/images/projects/1_light.png",
-    imageMobileLight: "/images/projects/1_mobile_light.png",
+    imageDark: "/images/projects/whiteboard-app/1_dark.png",
+    imageMobileDark: "/images/projects/whiteboard-app/1_mobile_dark.png",
+    imageLight: "/images/projects/whiteboard-app/1_light.png",
+    imageMobileLight: "/images/projects/whiteboard-app/1_mobile_light.png",
     title: "Collaborative Whiteboard",
     link: "https://github.com/procellis33/collaboration-whiteboard",
+  },
+  {
+    imageDark: "/images/projects/calendar-app/pc_dark.png",
+    imageMobileDark: "/images/projects/calendar-app/mobile_dark.png",
+    imageLight: "/images/projects/calendar-app/pc_light.png",
+    imageMobileLight: "/images/projects/calendar-app/mobile_light.png",
+    title: "Calendar App",
+    link: "https://youtu.be/8XOdtP_wgYQ",
   },
 ] as const;
 
@@ -89,9 +97,9 @@ export const experiencesData: IExperiencesData[] = [
     title: "Software Engineer",
     skills: ["TypeScript", "React Native", "Go", "Redis", "PostgreSQL"],
     description:
-      "Currently, I'm working on mobile app. Part of my responsibilities were to architect an app structure, work with API and front-end. I translated business logic into app features, staying connected with clients. Now, I'm integrating client-suggested ideas to enhance the project.",
+      "Part of my responsibilities were to architect an app structure, work with API and front-end. I translated business logic into app features, staying connected with clients. Now, I'm integrating client-suggested ideas to enhance the project.",
     icon: React.createElement(CgWorkAlt),
-    date: "May 2023 - Present",
+    date: "May 2023 - Mar 2024",
   },
 ] as const;
 
