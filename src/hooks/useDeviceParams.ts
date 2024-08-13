@@ -1,6 +1,6 @@
 "use client";
 import { useState, useLayoutEffect } from "react";
-import { debounce } from "@/lib/utils/debounce";
+import { debounce } from "@/lib/utils";
 
 interface IDeviceParams {
   width: number;

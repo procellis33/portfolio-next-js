@@ -9,10 +9,12 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/assets/data";
 import { useTheme } from "@/context/themeContextProvider";
+import { TimelineItem } from "@/components/sections/experience/timeline-item";
 
 const Experience: React.FC = () => {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
+
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
@@ -41,20 +43,7 @@ const Experience: React.FC = () => {
                 background: theme === "light" ? "white" : "#24292EFF",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
-              </p>
-              <ul className="mt-2 flex flex-wrap gap-2 text-xs text-gray-800 sm:text-sm lg:text-base">
-                {item.skills.map((skill, index) => (
-                  <li
-                    key={index}
-                    className="rounded-xl border border-black/[0.1] bg-gray-200 px-2 py-2 dark:bg-white/10 dark:text-white/80 lg:px-4"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
+              <TimelineItem item={item} />
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

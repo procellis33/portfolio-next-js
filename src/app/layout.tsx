@@ -14,8 +14,9 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alexey | Portfolio",
-  description: "Alexey is a developer with more than 2 years of experience.",
+  title: "Alexey Romanov | Portfolio",
+  description:
+    "Alexey Romanov is a developer with more than 3 years of experience.",
 };
 
 interface IRootLayout {

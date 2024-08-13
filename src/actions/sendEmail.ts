@@ -2,8 +2,7 @@
 
 import React from "react";
 import { Resend } from "resend";
-import validateString from "@/utils/validateString";
-import getErrorMessage from "@/utils/getErrorMessage";
+import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/ContactFormEmail";
 import { renderAsync } from "@react-email/render";
 

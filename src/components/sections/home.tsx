@@ -62,7 +62,7 @@ const Home: React.FC = () => {
       >
         <span className="font-bold">Hello, I&apos;m Alexey.</span> I&apos;m
         mainly a <span className="font-bold">front-end engineer</span> with{" "}
-        <span className="font-bold">more than 2.5 years</span> of experience. I
+        <span className="font-bold">more than 3 years</span> of experience. I
         enjoy building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">React</span>.
       </motion.h1>

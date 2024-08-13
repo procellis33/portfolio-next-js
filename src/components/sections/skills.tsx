@@ -28,7 +28,7 @@ const Skills: React.FC = () => {
       ref={ref}
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-center gap-2 text-base md:text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
             variants={fadeInAnimation}
@@ -37,7 +37,7 @@ const Skills: React.FC = () => {
             viewport={{ once: true }}
             custom={index}
             key={index}
-            className="rounded-xl border border-black/[0.1] bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="rounded-md md:rounded-xl border border-black/[0.1] bg-white px-3 py-2 md:px-5 md:py-3 dark:bg-white/10 dark:text-white/80"
           >
             {skill}
           </motion.li>
